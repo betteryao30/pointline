@@ -22,7 +22,7 @@ int main()
      memset(&myaddr,0,sizeof(myaddr));
      myaddr.sin_family = PF_INET;
      myaddr.sin_port = htons(1314);
-     myaddr.sin_addr.s_addr = inet_addr("175.24.78.187");
+     myaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
 
   //1.创建套接字
    int serverId = socket(PF_INET,SOCK_STREAM,0);
